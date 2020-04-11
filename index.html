@@ -61,9 +61,6 @@
 			<div class="about">
 				<div>
 				<h2 class="who">Who?</h2>
-				<!-- <canvas id="myCanvas" width="300" height="220">
-				Your browser does not support the canvas element.
-				</canvas> -->
 
 				<svg width="300" height="200">
 				  	<rect x="0" y="0" width="300" height="200" style="fill:#2d2d2d;" />
@@ -239,7 +236,6 @@
 			          	<input type="email" name="_replyto">
 			          	<label for="message">Message</label>
 			          	<textarea name="message" cols="30" rows="10"></textarea>
-			          <!-- <input type="text" name="_gotcha" style="display:none"> -->
 			          	<input type="submit" value="Send">
 		        </form>
 				</div>
@@ -247,11 +243,6 @@
 	</main>
 
 <script type="text/javascript">
-	// document.querySelectorAll("#toggleMenu a").onclick = closeToggle;
-	
-	// function closeToggle() {
-	// 	document.querySelector("toggleMenu").style.width = "0";
-	// }
 	function openNav() {
 	  document.getElementById("toggleMenu").style.width = "100%";
 	}
@@ -259,72 +250,6 @@
 	function closeNav() {
 	  document.getElementById("toggleMenu").style.width = "0";
 	}
-
-	var canvas = document.getElementById("myCanvas");
-
-	var ctx = canvas.getContext("2d");
-
-	var gradient = ctx.createLinearGradient(0, 0, 0, 170);
-	gradient.addColorStop("0", "#45bafc");
-	gradient.addColorStop("0.5", "#57eea1");
-	gradient.addColorStop("1.0", "#bec6d5");
-
-	// Fill with gradient
-	ctx.strokeStyle = gradient;
-	ctx.lineWidth = 5;
-	ctx.strokeRect(0, 0, 300, 220);
-
-	var lineOneConOne = canvas.getContext("2d");
-	var lineOneConTwo = canvas.getContext("2d");
-	var lineTwoConOne = canvas.getContext("2d");
-	var lineTwoConTwo = canvas.getContext("2d");
-	var lineThreeConOne = canvas.getContext("2d");
-	var lineThreeConTwo = canvas.getContext("2d");
-	var lineFourConOne = canvas.getContext("2d");
-	var lineFourConTwo = canvas.getContext("2d");
-	
-    lineFourConTwo.strokeStyle = "#bec6d5";
-	var firstText = canvas.getContext("2d");
-	firstText.fillStyle = "#bec6d5";
-	firstText.font = "18px Arial";
-	firstText.fillText("Developer", 100, 50);
-	var secondText = canvas.getContext("2d");
-	secondText.font = "18px Arial";
-	secondText.fillText("Network Engr", 100, 80);
-	var thirdText = canvas.getContext("2d");
-	thirdText.font = "18px Arial";
-	thirdText.fillText("Tailor", 100, 110);
-	var fourthText = canvas.getContext("2d");
-	fourthText.font = "18px Arial";
-	fourthText.fillText("Poetry Lover", 100, 140);
-	//dev
-	lineOneConOne.moveTo(30,0);
-	lineOneConOne.lineTo(30,48);
-	lineOneConOne.stroke();
-	lineOneConTwo.moveTo(30,45);
-	lineOneConTwo.lineTo(100,45);
-	lineOneConTwo.stroke();
-	//tailor
-	lineTwoConOne.moveTo(30,220);
-	lineTwoConOne.lineTo(30,102);
-	lineTwoConOne.stroke();
-	lineTwoConTwo.moveTo(30,105);
-	lineTwoConTwo.lineTo(100,105);
-	lineTwoConTwo.stroke();
-	//net
-	lineThreeConOne.moveTo(220,75);
-	lineThreeConOne.lineTo(270,75);
-	lineThreeConOne.stroke();
-	lineThreeConTwo.moveTo(270,0);
-	lineThreeConTwo.lineTo(270,78);
-	lineThreeConTwo.stroke();
-	//poet
-	lineFourConOne.moveTo(270,220);
-	lineFourConOne.lineTo(270,135);
-	lineFourConOne.stroke();
-	lineFourConTwo.moveTo(210,135);
-	lineFourConTwo.lineTo(273,135);
-	lineFourConTwo.stroke();
 </script>
 </body>
 </html>
