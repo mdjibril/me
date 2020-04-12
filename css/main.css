@@ -112,9 +112,10 @@ a:hover{
 	height: 100vh;
 }
 .about {
-	padding-top: 30px;
+	padding-top: 0;
+	margin-top: 0;
 	color: #bec6d5;
-	height: 40%;
+	height: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -127,7 +128,7 @@ a:hover{
 	text-align: center;
 }
 .photo {
-	padding-top: 4em;
+	padding-top: 1.5em;
 	height: 50%;
 	display: flex;
 	align-items: center;
@@ -141,9 +142,11 @@ a:hover{
 	font-size: 17px;
 }
 .avatar {
-	width:200px; 
-	height:210px; 
-	border-radius: 50%;
+	width:150px; 
+	height:150px; 
+	object-fit: cover;
+	object-position: 0 0;
+	border-radius: 100%;
 	margin: auto auto;
 	display: block;
 }
