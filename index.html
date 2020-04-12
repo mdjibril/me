@@ -9,11 +9,11 @@
   	<meta name="author" content="Jibril Dauda Muhammad">
 	<title>Jibril Dauda Muhammad - Developer, Network</title>
 
+	<link href="css/main.css" rel="preload" as="style" async>
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800" rel="stylesheet">
-
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<link href="css/main.css" rel="import" async>
+	<link href="css/main.css" rel="stylesheet" async>
 </head>
 <body>
 	<header class="nav-header">
@@ -42,7 +42,8 @@
 			<div class="photo">
 				<div>
 					<img src="img/me.jpg" alt=""  class="avatar">
-					<p class="name">Assalamu alaikum, I'm Jibril!<br>
+					<p class="name">Assalamu alaikum, I'm Jibril!</p>
+					<p class="name">
 			    		<a href="https://twitter.com/mdjibril_" target="_blank" rel="noopener">
 				          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
 				        </a>
@@ -231,10 +232,10 @@
 		        <form action="https://formspree.io/xknvvkjv" method="post">
 		        		<input type="hidden" name="_next" value="https://mdjibril.me/thanks.html"/>
 			          	<label for="name">Name
-			          		<input type="text" name="name" id="name">
+			          		<input type="text" name="name" id="name" required="">
 			          	</label>
 			          	<label for="email">Email Address
-			          		<input type="email" name="_replyto" id="email">
+			          		<input type="email" name="_replyto" id="email" required="">
 			          	</label>
 			          	<label for="message">Message
 			          		<textarea name="message" cols="30" rows="10" id="message"></textarea>
