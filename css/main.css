@@ -114,14 +114,14 @@ a:hover{
 }
 
 .photo {
-	padding-top: 1.5em;
+	padding-top: 5.5em;
 	height: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 .about {
-	padding-top: 0;
+	padding-top: 20px;
 	margin-top: 0;
 	color: #bec6d5;
 	height: 40%;
@@ -133,6 +133,7 @@ a:hover{
 .about > div > h2 {
 	margin-bottom: 0px;
 	margin-top: 5px;
+	padding-top: 25px;
 	padding-bottom: 0px;
 	text-align: center;
 }
