@@ -23,6 +23,7 @@ body {
 a{
 	text-decoration: none;
 	color: #bec6d5;
+	padding: 0px 10px;
 }
 a:hover{
 	color: #ffffff;
@@ -111,14 +112,19 @@ a:hover{
 	background: #2d2d2d;
 	height: 100vh;
 }
-.fa {
-	padding: 8px 8px;
+
+.photo {
+	padding-top: 1.5em;
+	height: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .about {
 	padding-top: 0;
 	margin-top: 0;
 	color: #bec6d5;
-	height: 50%;
+	height: 40%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -129,13 +135,6 @@ a:hover{
 	margin-top: 5px;
 	padding-bottom: 0px;
 	text-align: center;
-}
-.photo {
-	padding-top: 1.5em;
-	height: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 .name {
 	padding-top: 0;
