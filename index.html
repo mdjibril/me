@@ -27,7 +27,7 @@
 					<a href="#skills">Skills</a>
 					<a href="#experience">Experience</a>
 					<a href="#portfolio">Portfolio</a>
-					<a href="#Project">Project</a>
+					<a href="#project">Project</a>
 					<a href="#post">Post</a>
 					<a href="#contact">Contact</a>
 					<a href="javascript:void(0)" class="closebtn big" onclick="closeNav()">&times;</a>
@@ -61,7 +61,7 @@
 			</div>
 			<div class="about">
 				<div>
-				<h2 class="who">Who?</h2>
+				<h2 class="who"></h2>
 
 				<svg width="300" height="200">
 				  	<rect x="0" y="0" width="300" height="200" style="fill:#2d2d2d;" />
@@ -111,19 +111,34 @@
 					<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
 				</div>
 			</header>
-			<div class="container">
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
+			<div class="container skillflex">
+				<div class="skill-card">
+					<h3>HTML</h3>
+				</div>
+				<div class="skill-card">
+					<h3>CSS</h3>
+				</div>
+				<div class="skill-card">
+					<h3>JS</h3>
+				</div>
+				<div class="skill-card">
+					<h3>PHP</h3>
+				</div>
+				<div class="skill-card">
+					<h3>Python</h3>
+				</div>
+				<div class="skill-card">
+					<h3>GIT</h3>
+				</div>
+				<div class="skill-card">
+					<h3>Java</h3>
+				</div>
+				<div class="skill-card">
+					<h3>MongoDB</h3>
+				</div>
+				<div class="skill-card">
+					<h3>MySQL</h3>
+				</div>
 			</div>
 		</section>
 
@@ -194,43 +209,68 @@
 					<p>Some projects I made in my free time.</p>
 				</div>
 			</header>
-			<div class="container">
+			<div class="container projectflex">
+				<div class="job">
 				<table>
 					<thead>
 						<tr>
-							<td>Project</td>
+							<th>Project</th>
+							<th>Description</th>
 						</tr>
 					</thead>
-				</table>				
+					<tbody>
+						<tr>
+							<td><a href="https://mdjibril.github.io/gpa-calc/" target="_blank">GPA Calc.</a></td>
+							<td>A calculator for calculating grade point average</td>
+						</tr>
+						<tr>
+							<td><a href="https://mdjibril.github.io/kompanion/" target="_blank">Kompanion.</a></td>
+							<td>A question bank mobile web application</td>
+						</tr>
+						<tr>
+							<td><a href="https://mdjibril.github.io/kompanion/" target="_blank">Photo album.</a></td>
+							<td>An album for final graduating students</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
 			</div>
 		</section>
 
 		<!-- post -->
-		<!-- <section class="section" id="post">
+		<section class="section" id="post">
 			<header class="section-header">
 				<div class="top-container">
 					
 				</div>
 			</header>
 			<div class="container">
-				
+				<!-- <dev-widget data-username="mdjibril" data-theme="dark" data-width="100%" data-name="none"></dev-widget> -->
+				<dev-widget 
+    data-username="mdjibril" 
+    data-theme="ocean" 
+    data-sortby="reactions" 
+    data-width="100%" 
+    data-contentheight="100%" 
+    data-limit="3" 
+    data-name="Saurabh 😎" 
+></dev-widget>
 			</div>
-		</section> -->
+		</section>
 
 		<!-- contact -->
 		<section class="section" id="contact">
 			<header class="section-header">
 				<div class="top-container">
 					<h2>Contact</h2>
-					<p>I'd love to hear from you! Fill out the form below, email me at <a href="mailto:muhammadjibrildauda@gmail.com">muhammadjibrildauda@gmail.com</a>, or find me on
-            		<a href="https://twitter.com/mdjibril_"  >Twitter</a> or
-            		<a href="https://github.com/mdjibril"  >GitHub</a>.</p>
+					<p class="contact-para">I'd love to hear from you! Fill out the form below, email me at<a href="mailto:muhammadjibrildauda@gmail.com">muhammadjibrildauda@gmail.com</a>, or find me on
+            		<a href="https://twitter.com/mdjibril_">Twitter</a>or<a href="https://github.com/mdjibril">GitHub</a>.</p>
 				</div>
 			</header>
 			<div class="container">
 				<div class="small-container">
 		        <form action="https://formspree.io/xknvvkjv" method="post">
-		        		<input type="hidden" name="_next" value="https://mdjibril.me"/>
+		        		<!-- <input type="hidden" name="_next" value="https://mdjibril.me"/> -->
 			          	<label for="name">Name
 			          		<input type="text" name="name" id="name" required="">
 			          	</label>
@@ -255,5 +295,6 @@
 	  document.getElementById("toggleMenu").style.width = "0";
 	}
 </script>
+<script src="https://unpkg.com/dev-widget@1.1.0/dist/card.component.min.mjs" type="module"></script>
 </body>
 </html>
