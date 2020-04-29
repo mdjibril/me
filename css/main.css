@@ -25,8 +25,14 @@ a{
 	color: #bec6d5;
 	padding: 0px 10px;
 }
-a:hover{
-	color: #ffffff;
+
+.contact-para > a {
+	color: #13a7fb;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #2d2d2d;
 }
 
 .nav-header{
@@ -164,7 +170,7 @@ a:hover{
 		height: 100%;
 		float: left;
 	}
-	.jobflex {
+	.jobflex,.skillflex, .projectflex{
 		display: flex;
 		/*align-items: stretch;*/
 		/*flex-wrap: wrap;*/
@@ -175,13 +181,18 @@ a:hover{
 
   	.job {
     	flex: 50%;
-    	max-width: 50%;
+    	max-width: 100%;
+  	}
+  	.skill-card{
+  		margin: 15px 10px;
+  		flex : 30%;
+  		max-width: 100%; 
   	}
   	
 }
 
 .section {
-	padding: 2.5em 1.0rem;
+	padding: 0.5em 1.0rem;
 	/*background-color: #f6f6f7;*/
 	background: #fefefe; 
 }
@@ -244,3 +255,61 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+.skill-card {
+	margin: 15px 10px;
+  	box-shadow: 0 4px 8px 0 rgba(0.2, 0.4, 0.6, 0.8);
+  	padding: 16px;
+  	text-align: center;
+  	background-color: #f1f1f1;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 1.1rem;
+  text-align: left;
+  background: #fff;
+  border-radius: 6px;
+}
+
+table a {
+  font-weight: 800;
+  color: #1d1e25;
+  font-size: 1.25rem;
+}
+
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+  padding: 28px;
+}
+
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+  padding: 16px;
+}
+
+tbody tr:hover {
+  background: -webkit-gradient(linear, left bottom, right top, from(#f6f6f7), to(#fefefe));
+  background: linear-gradient(to top right, #f6f6f7, #fefefe);
+}
+
+thead {
+  background: #1d1e25;
+  color: #bec6d5;
+  padding: 1rem;
+  font-size: 1.25rem;
+  border-bottom: 2px solid #ebecec;
+  font-weight: 400;
+}
+
+td, tr {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #ebecec;
+  color: #858787;
+}
+
+tbody > tr:last-child > td {
+  border-bottom: 0;
+}
