@@ -23,6 +23,10 @@ body {
 a{
 	text-decoration: none;
 	color: #bec6d5;
+	/*padding: 0px 10px;*/
+}
+
+.fa {
 	padding: 0px 10px;
 }
 
@@ -31,8 +35,8 @@ a{
 }
 
 a:hover {
-  text-decoration: underline;
-  color: #2d2d2d;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .nav-header{
@@ -60,7 +64,7 @@ a:hover {
 	display: visible;
 	font-size:30px;
 	cursor:pointer; 
-	color: white;
+	color: #bec6d5;
 }
 
 .nav-list-items {
