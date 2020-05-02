@@ -31,7 +31,7 @@ a{
 }
 
 .contact-para > a {
-	color: #13a7fb;
+	color: #4caf50;
 }
 
 a:hover {
@@ -206,7 +206,7 @@ a:hover {
 }
 .top-container p {
 	font-size: 17px;
-	color: #858787;
+	color: #000000;
 	padding-top: 0;
 	margin-top: 0;
 }
@@ -311,7 +311,7 @@ thead {
 td, tr {
   padding: 1.5rem 1rem;
   border-bottom: 1px solid #ebecec;
-  color: #858787;
+  color: #000000;
 }
 
 tbody > tr:last-child > td {
