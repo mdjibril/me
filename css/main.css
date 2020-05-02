@@ -39,6 +39,9 @@ a{
 }
 
 .contact-para > a {
+	color: #000000;
+}
+.contact-para > a:hover {
 	color: #4caf50;
 }
 
@@ -314,6 +317,10 @@ thead {
   font-size: 1.25rem;
   border-bottom: 2px solid #ebecec;
   font-weight: 400;
+}
+
+thead >tr {
+	color: #ffffff;
 }
 
 td, tr {
