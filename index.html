@@ -21,16 +21,34 @@
 			<div class="nav-brand" id="home">
 				<a href="index.html"><strong>&lt; mdjibril /&gt;</strong></a>
 			</div>
-			<div class="nav-list large">
-				<a class="openspan big" onclick="openNav()">&#9776; &nbsp;</a>
-				<nav class="nav-list-items large" id="toggleMenu" onclick="closeNav()">
-					<a href="#skills">Skills</a>
-					<a href="#experience">Experience</a>
-					<a href="#portfolio">Portfolio</a>
-					<a href="#project">Project</a>
+			<div class="nav-list">
+				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
+				<nav class="nav-list-items" id="toggleMenu" onclick="closeNav()">
+					<!-- <a href="#skills" class="top">About</a>
+					<a href="#experience" class="middletop">Blog</a>
+					<a href="#portfolio" class="middlebottom">Portfolio</a>
+					<a href="#project" class="bottom">Project</a>
 					<a href="#post">Post</a>
-					<a href="#contact">Contact</a>
-					<a href="javascript:void(0)" class="closebtn big" onclick="closeNav()">&times;</a>
+					<a href="#contact">Contact</a> -->
+
+					<a href="#" class="top">
+				        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+				        <span>Home</span>
+				    </a>
+				    <a href="#" class="middletop">
+				        <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+				        <span>About</span>
+				    </a>
+				    <a href="#" class="middlebottom">
+				        <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
+				        <span>Blog</span>
+				    </a>
+				    <a href="#" class="bottom">
+				        <i class="fa fa-file fa-2x" aria-hidden="true"></i>
+				        <span>CV</span>
+				    </a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				</nav>
 				</nav>
 			</div>
 		</div>
@@ -40,65 +58,57 @@
 		<!-- introduction -->
 		<header class="introduction">
 			<div class="photo">
-				<div>
-					<img class="avatar" src="img/me.jpg" alt="user profile"/>
-					<p class="name">Assalamu alaikum, I'm Jibril!</p>
-					<p class="name">
-			    		<a href="https://twitter.com/mdjibril_">
-				          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-				        </a>
-				        <a href="https://github.com/mdjibril">
-				          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-				        </a>
-				        <a href="https://www.linkedin.com/in/mdjibril/">
-				          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-				        </a>
-				        <a href="https://www.facebook.com/mdjibril2/">
-				          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-				        </a>
-				    </p>
-		    	</div>
+				<div class="my">
+				<img class="avatar" src="img/me3.jpg" alt="user profile"/>
+				</div>
+				<div class="social my">
+				    <a href="https://github.com/mdjibril">
+				        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+				    </a>
+				    <a href="https://www.linkedin.com/in/mdjibril/">
+				        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+				    </a>
+				    <a href="https://www.facebook.com/mdjibril2/">
+				        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+				    </a>
+				    <a href="https://twitter.com/mdjibril_">
+				        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+				    </a>
+				</div>
+				<div class="my">
+				<h1>Assalamu alaikum! I'm Jibril.</h1>
+				</div>
 			</div>
 			<div class="about">
-				<!-- <div> -->
-				<h2 class="who"></h2>
-				<svg width="300" height="200">
-				  	<rect x="0" y="0" width="300" height="200" style="fill:#2d2d2d;" />
+				<svg width="300" height="245">
+				  	<rect x="0" y="0" width="300" height="245" style="fill:#2d2d2d;" />
 
-				  	<!-- one -->
-				  	<line x1="30" y1="0" x2="30" y2="28" style="stroke:#bec6d5;stroke-width:5" />
-				  	<circle cx="30" cy="7" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
+				  	<!-- line one -->
+				  	<line x1="100" y1="0" x2="100" y2="62" style="stroke:#bec6d5;stroke-width:5" />
+				  	<circle cx="100" cy="7" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
 				  	<a href="https://github.com/mdjibril"  >
-				  		<text x="100" y="30" fill="#bec6d5">Developer</text>
+				  		<text x="35" y="80" fill="#bec6d5" font-size="35">Fullstack</text>
+				  		<text x="35" y="90" fill="#bec6d5" font-size="15" letter-spacing="9px">developer</text>
 				  	</a>
-				  	<line x1="30" y1="25" x2="100" y2="25" style="stroke:#bec6d5;stroke-width:5" />
-
-				  	<!-- two -->
-				  	<line x1="270" y1="0" x2="270" y2="77" style="stroke:#bec6d5;stroke-width:5" />
-				  	<circle cx="270" cy="7" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	<a href="#">
-				  		<text x="100" y="76.7" fill="#bec6d5">Network Engineer</text>
+				  	<!-- line two -->
+				   	<line x1="100" y1="92" x2="100" y2="175" style="stroke:#bec6d5;stroke-width:5" />
+				   	<circle cx="102" cy="173" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
+				  	<!-- line three -->
+				   	<line x1="100" y1="173" x2="130" y2="173" style="stroke:#bec6d5;stroke-width:5" />
+				   	<!-- line four -->
+				   	<line x1="173" y1="75" x2="200" y2="75" style="stroke:#bec6d5;stroke-width:5" />
+				   	<circle cx="200" cy="75" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
+				  	<!-- line five -->
+				  	<line x1="200" y1="73" x2="200" y2="165" style="stroke:#bec6d5;stroke-width:5" />
+				  	<a href="https://www.linkedin.com/in/mdjibril">
+				  		<text x="130" y="185" fill="#bec6d5" font-size="35">Network</text>
+				  		<text x="130" y="195" fill="#bec6d5" font-size="15" letter-spacing="10px">engineer</text>
 				  	</a>
-				  	<line x1="230" y1="74" x2="270" y2="74" style="stroke:#bec6d5;stroke-width:5" />
-
-				  	<!-- three -->
-				  	<line x1="30" y1="114" x2="30" y2="200" style="stroke:#bec6d5;stroke-width:5" />
-				  	<circle cx="30" cy="193" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	<a href="https://facebook.com/mdjibril2"  >
-				  		<text x="100" y="123.4" style="fill:#bec6d5;">Poetry lover</text>
-				  	</a>
-				  	<line x1="30" y1="117" x2="100" y2="117" style="stroke:#bec6d5;stroke-width:5" />
-
-				  	<!-- four -->
-				   	<line x1="270" y1="200" x2="270" y2="162" style="stroke:#bec6d5;stroke-width:5" />
-				   	<circle cx="270" cy="193" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				   	<a href="#">
-				   		<text x="100" y="170.1" fill="#bec6d5">Tailor</text>
-				  	</a>
-				  	<line x1="270" y1="165" x2="140" y2="165" style="stroke:#bec6d5;stroke-width:5" />
+				  	<!-- line six -->
+				  	<line x1="200" y1="198" x2="200" y2="245" style="stroke:#bec6d5;stroke-width:5" />
+				   	<circle cx="200" cy="238" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
 				  	Sorry, your browser does not support inline SVG.  
 				</svg>
-				<!-- </div> -->
 			</div>
 		</header>
 
@@ -277,11 +287,15 @@
 
 <script type="text/javascript">
 	function openNav() {
-	  document.getElementById("toggleMenu").style.width = "100%";
+	  document.querySelector("#toggleMenu").style.width = "230px";
+	  document.querySelector("#toggleMenu").style.height = "230px";
+	  document.querySelector("#toggleMenu").style.borderTopLeftRadius = '0%';
+	  document.querySelector("#toggleMenu").style.borderBottomLeftRadius = '100%';
+	  document.querySelector("#toggleMenu").style.borderBottomRightRadius = '0%';
 	}
 
 	function closeNav() {
-	  document.getElementById("toggleMenu").style.width = "0";
+	  document.querySelector("#toggleMenu").style.width = "0";
 	}
 </script>
 <!-- <script src="https://unpkg.com/dev-widget@1.1.0/dist/card.component.min.mjs" type="module"></script> -->
