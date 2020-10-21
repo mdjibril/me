@@ -24,13 +24,6 @@
 			<div class="nav-list">
 				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
 				<nav class="nav-list-items" id="toggleMenu" onclick="closeNav()">
-					<!-- <a href="#skills" class="top">About</a>
-					<a href="#experience" class="middletop">Blog</a>
-					<a href="#portfolio" class="middlebottom">Portfolio</a>
-					<a href="#project" class="bottom">Project</a>
-					<a href="#post">Post</a>
-					<a href="#contact">Contact</a> -->
-
 					<a href="#" class="top">
 				        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 				        <span>Home</span>
@@ -49,7 +42,6 @@
 				    </a>
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				</nav>
-				</nav>
 			</div>
 		</div>
 	</header>
@@ -57,12 +49,12 @@
 	<main>
 		<!-- introduction -->
 		<header class="introduction">
-			<div class="photo">
+			<div class="introduction_photo">
 				<div class="my">
-				<img class="avatar" src="img/me.jpg" alt="user profile"/>
+					<img class="avatar" src="img/me.webp" alt="user profile"/>
 				</div>
 				<div class="social my">
-				    <a href="https://github.com/mdjibril">
+				    <a href="https://github.com/mdjibril" target="_blank" rel="noreferrer">
 				        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
 				    </a>
 				    <a href="https://www.linkedin.com/in/mdjibril/">
@@ -76,10 +68,10 @@
 				    </a>
 				</div>
 				<div class="my">
-				<h1>Assalamu alaikum! I'm Jibril.</h1>
+					<h1>Assalamu alaikum! <br>I'm Jibril.</h1>
 				</div>
 			</div>
-			<div class="about">
+			<div class="introduction_about">
 				<svg width="300" height="245">
 				  	<rect x="0" y="0" width="300" height="245" style="fill:#2d2d2d;" />
 
@@ -112,178 +104,85 @@
 			</div>
 		</header>
 
-		<!-- skills -->
-		<section class="section" id="skills">
-			<header class="section-header">
-				<div class="top-container">
-					<h2>Technical Skills</h2>
-					<p>I specialize in frontend development with knowlegde in backend development and networking security</p>
-				</div>
-			</header>
-			<div class="container skillflex">
-				<div class="skill-card">
-					<h3>HTML</h3>
-				</div>
-				<div class="skill-card">
-					<h3>CSS</h3>
-				</div>
-				<div class="skill-card">
-					<h3>JS</h3>
-				</div>
-				<div class="skill-card">
-					<h3>PHP</h3>
-				</div>
-				<div class="skill-card">
-					<h3>Python</h3>
-				</div>
-				<div class="skill-card">
-					<h3>GIT</h3>
-				</div>
-				<div class="skill-card">
-					<h3>Java</h3>
-				</div>
-				<div class="skill-card">
-					<h3>MongoDB</h3>
-				</div>
-				<div class="skill-card">
-					<h3>MySQL</h3>
+		<!-- articles -->
+		<section class="section" id="portfolio">
+			<h2 class="section_title">Articles <a href="#" class="section_title_link">  view all</a></h2>
+			<hr>
+			<div class="container articles">
+				<div class="article">
+					<a href="#">
+					</a>
 				</div>
 			</div>
 		</section>
-
-		<!-- experience -->
-		<section class="section" id="experience">
-			<header class="section-header">
-				<div class="top-container">
-					<h2>Experience</h2>
-					<p>Some of the position I've held.</p>
-				</div>
-			</header>
-			<div class="container jobflex">
-				<div class="job">
-					<div class="job-title">
-						<h3>Info. Tech instructor(Contract)</h3>
-						<h4>Verse IT Services Ltd. Abuja</h4>
-						<h4>January 2020 - Present</h4>
-					</div>
-				</div>
-				<div class="job">
-					<div class="job-title">
-						<h3>Mongo - DB Instructor</h3>
-						<h4>Verse IT Services Ltd. Abuja</h4>
-						<h4>November 2019 - November 2019</h4>
-					</div>
-				</div>
-				<div class="job">
-					<div class="job-title">
-						<h3>Web Developer Intern</h3>
-						<h4>ICT Center Kaduna Polytechnic, Kaduna</h4>
-						<h4>August 2018 - November 2018</h4>
-					</div>
-				</div>
-				<div class="job">
-					<div class="job-title">
-						<h3>Network Technician Intern</h3>
-						<h4>ICT Center Kaduna Polytechnic, Kaduna</h4>
-						<h4>May 2018 - August 2018</h4>
-					</div>
-				</div>
-				<div class="job">
-					<div class="job-title">
-						<h3>Webdesign Intern</h3>
-						<h4>Vocational Institute Bwari, Abuja</h4>
-						<h4>August 2013 - September 2013</h4>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- portfolio -->
-		<!-- <section class="section" id="portfolio">
-			<header class="section-header">
-				<div class="top-container">
-					
-				</div>
-			</header>
-			<div class="container">
-				
-			</div>
-		</section> -->
 
 		<!-- project -->
-		<section class="section" id="project">
-			<header class="section-header">
-				<div class="top-container">
-					<h2>Project</h2>
-					<p>Some projects I made in my free time.</p>
+		<section class="section" id="portfolio">
+			<h2 class="section_title">Projects <a href="https://github.com/mdjibril" class="section_title_link">  view all</a></h2>
+			<hr>
+			<div class="container projects">
+				<div class="project">
+					<div>
+						<a href="https://gpacalc.netlify.app" class="project_link"> <i class="fa fa-calculator fa-2x" aria-hidden="true"></i>GPA Calculator</a>
+						<div class="project_description">A simple calculator for checking grade point of a students </div>
+					</div>
+					<div>
+						<a href="" class="project_source">Source</a>
+					</div>
 				</div>
-			</header>
-			<div class="container projectflex">
-				<div class="job">
-				<table>
-					<thead>
-						<tr>
-							<th>Project</th>
-							<th>Description</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td><a href="https://mdjibril.github.io/gpa-calc/" target="_blank" rel="noopener">GPA Calc.</a></td>
-							<td>A calculator for calculating grade point average</td>
-						</tr>
-						<tr>
-							<td><a href="https://mdjibril.github.io/kompanion/" target="_blank" rel="noopener">Kompanion.</a></td>
-							<td>A question bank mobile web application</td>
-						</tr>
-						<tr>
-							<td><a href="https://mdjibril.github.io/kompanion/" target="_blank" rel="noopener">Photo album.</a></td>
-							<td>An album for final graduating students</td>
-						</tr>
-					</tbody>
-				</table>
+				<div class="project">
+					<div>
+						<a href="#" class="project_link"> <i class="fa fa-photo fa-2x" aria-hidden="true"></i>Photo Album</a>
+						<div class="project_description">A web application for viewing photos </div>
+					</div>
+					<div>
+						<a href="#" class="project_source">Source</a>
+					</div>
+				</div>
+				<div class="project">
+					<div>
+						<a href="#" class="project_link"> <i class="fa fa-question fa-2x" aria-hidden="true"></i>Kompanion</a>
+						<div class="project_description">A question and answer mobile web-app for my department </div>
+					</div>
+					<div>
+						<a href="#" class="project_source">Source</a>
+					</div>
+				</div>
+				<div class="project">
+					<div>
+						<a href="#" class="project_link"> <i class="fa fa-question fa-2x" aria-hidden="true"></i>Pharmaven</a>
+						<div class="project_description">A question and answer mobile web-app for my department </div>
+					</div>
+					<div>
+						<a href="#" class="project_source">Source</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- post -->
-		<!-- <section class="section" id="post">
-			<header class="section-header">
-				<div class="top-container">
-					<h2>Post</h2>
-				</div>
-			</header>
-			<div class="container projectflex">
-				<dev-widget data-username="mdjibril" data-theme="ocean"  data-width="100%" data-name="Jibril 😎" ></dev-widget>
-			</div>
-		</section> -->
-
-		<!-- contact -->
-		<section class="section" id="contact">
-			<header class="section-header">
-				<div class="top-container">
-					<h2>Contact</h2>
-					<p class="contact-para">I'd love to hear from you! Fill out the form below, email me at <a href="mailto:muhammadjibrildauda@gmail.com">muhammadjibrildauda@gmail.com</a>, or find me on <a href="https://twitter.com/mdjibril_">Twitter</a> or <a href="https://github.com/mdjibril">GitHub</a>.</p>
-				</div>
-			</header>
-			<div class="container">
-				<div class="small-container">
-		        <form action="https://formspree.io/xknvvkjv" method="post">
-		        		<!-- <input type="hidden" name="_next" value="https://mdjibril.me"/> -->
-			          	<label for="name">Name
-			          		<input type="text" name="name" id="name" required="">
-			          	</label>
-			          	<label for="email">Email Address
-			          		<input type="email" name="_replyto" id="email" required="">
-			          	</label>
-			          	<label for="message">Message
-			          		<textarea name="message" cols="30" rows="10" id="message"></textarea>
-			          	</label>
-			          	<input type="submit" value="Send">
-		        </form>
-				</div>
-		</section>
 	</main>
+
+	<footer class="footer">
+		<div class="footer_links">
+			<a href="https://github.com/mdjibril" target="_blank" rel="noreferrer">
+			    Github
+			</a>
+			<a href="https://www.linkedin.com/in/mdjibril/" target="_blank" rel="noreferrer">
+			    Linkedin
+			</a>
+			<a href="https://www.facebook.com/mdjibril2/" target="_blank" rel="noreferrer">
+			    Facebook
+			</a>
+			<a href="https://twitter.com/mdjibril_" target="_blank" rel="noreferrer">
+			    Twitter
+			</a>
+		</div>
+		<div class="footer_links">
+			<a href="https://" title="Built with Gatsby" target="_blank" rel="noreferrer">Gatsby</a>
+			<a href="https://github.com" title="Open Source on Github" target="_blank" rel="noreferrer">Github</a>
+			<a href="https://netlify.com" title="Hosted by Netlify" target="_blank" rel="noreferrer">Netlify</a>
+		</div>
+	</footer>
 
 <script type="text/javascript">
 	function openNav() {
@@ -298,6 +197,5 @@
 	  document.querySelector("#toggleMenu").style.width = "0";
 	}
 </script>
-<!-- <script src="https://unpkg.com/dev-widget@1.1.0/dist/card.component.min.mjs" type="module"></script> -->
 </body>
 </html>
