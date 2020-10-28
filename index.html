@@ -10,8 +10,8 @@
 	<title>Jibril Dauda Muhammad - Developer, Network</title>
 
 	<link href="css/main.css" rel="preload" as="style" async>
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet">
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet" defer>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
 
 	<link href="css/main.css" rel="stylesheet" async>
 </head>
@@ -23,7 +23,7 @@
 			</div>
 			<div class="nav-list">
 				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
-				<nav class="nav-list-items" id="toggleMenu" onclick="closeNav()">
+				<nav class="nav-list-items" id="toggleMenu">
 					<a href="#" class="top">
 				        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 				        <span>Home</span>
@@ -108,11 +108,7 @@
 		<section class="section" id="portfolio">
 			<h2 class="section_title">Articles <a href="#" class="section_title_link">  view all</a></h2>
 			<hr>
-			<div class="container articles">
-				<div class="article">
-					<a href="#">
-					</a>
-				</div>
+			<div class="container articles" id="articles">
 			</div>
 		</section>
 
@@ -123,17 +119,17 @@
 			<div class="container projects">
 				<div class="project">
 					<div>
-						<a href="https://gpacalc.netlify.app" class="project_link"> <i class="fa fa-calculator fa-2x" aria-hidden="true"></i>GPA Calculator</a>
-						<div class="project_description">A simple calculator for checking grade point of a students </div>
+						<a href="https://mygpa.netlify.app" class="project_link"> <i class="fa fa-calculator fa-2x" aria-hidden="true"></i>GPA Calculator</a>
+						<div>A simple calculator for checking grade point of a students </div>
 					</div>
 					<div>
-						<a href="" class="project_source">Source</a>
+						<a href="https://github.com/mdjibril/gpa-calculator.git" class="project_source" target="_blank" rel="noreferrer">Source</a>
 					</div>
 				</div>
 				<div class="project">
 					<div>
 						<a href="#" class="project_link"> <i class="fa fa-photo fa-2x" aria-hidden="true"></i>Photo Album</a>
-						<div class="project_description">A web application for viewing photos </div>
+						<div>A web application for viewing photos </div>
 					</div>
 					<div>
 						<a href="#" class="project_source">Source</a>
@@ -142,16 +138,7 @@
 				<div class="project">
 					<div>
 						<a href="#" class="project_link"> <i class="fa fa-question fa-2x" aria-hidden="true"></i>Kompanion</a>
-						<div class="project_description">A question and answer mobile web-app for my department </div>
-					</div>
-					<div>
-						<a href="#" class="project_source">Source</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<a href="#" class="project_link"> <i class="fa fa-question fa-2x" aria-hidden="true"></i>Pharmaven</a>
-						<div class="project_description">A question and answer mobile web-app for my department </div>
+						<div>A question and answer mobile web-app for my department </div>
 					</div>
 					<div>
 						<a href="#" class="project_source">Source</a>
@@ -196,6 +183,44 @@
 	function closeNav() {
 	  document.querySelector("#toggleMenu").style.width = "0";
 	}
+
+	const api_url = "https://dev.to/api/articles?username=mdjibril";
+
+	async function getArticle() {
+		const response = await fetch(api_url);
+		const data = await response.json();
+
+	  //For mulitple articles that you want to display
+	  function displayMultipleArticles() {
+	    for (let i = 1; i < 4; i++) {
+	    	
+	    	let articleDetails = document.createElement("div");
+	      	articleDetails.className = "article";
+
+	    	let articleDate = document.createElement("div");
+	    	articleDate.className = "article_date"
+			articleDate.innerHTML = data[i].readable_publish_date; //date
+
+			let articleTitle = document.createElement("div");
+			articleTitle.className = "article_title";
+			articleTitle.innerHTML = data[i].title; //title
+
+	      	let articleLink = document.createElement("a"); //link
+	      	articleLink.target = "_blank";
+	      	articleLink.className = "article_link";
+	      	articleLink.href = data[i].url;
+
+	      	articleDetails.appendChild(articleDate);
+	      	articleLink.appendChild(articleTitle);
+	      	articleDetails.appendChild(articleLink);
+
+	      	document.getElementById("articles").appendChild(articleDetails);
+	    }
+	  }
+	  displayMultipleArticles();
+	}
+	getArticle();
 </script>
 </body>
 </html>
+

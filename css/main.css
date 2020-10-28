@@ -20,17 +20,9 @@ body {
   overflow-x: hidden;
 }
 
-/*@font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
-  font-display: swap;
-}*/
-
 a{
 	text-decoration: none;
-	color: #bec6d5;\
+	color: #bec6d5;
 }
 
 .fa {
@@ -196,6 +188,7 @@ span {
 .section {
 	padding: 0.5em 1.5em;
 	background: #fefefe; 
+	max-width: 100%;
 }
 
 .section_title {
@@ -211,6 +204,25 @@ span {
 	margin-left: 10px;
 }
 
+.article {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	padding-bottom: 15px;
+}
+
+.article_date {
+	font-size: 12px;
+	width: 100px;
+	padding-right: 10px;
+}
+
+.article_title {
+	margin: 0 auto;
+}
+
+
 .project {
 	display: flex;
 	flex-direction: row;
@@ -219,11 +231,11 @@ span {
 	padding-bottom: 15px;
 }
 
-.project_link {
+.project_link, .article_link {
 	color: #000000;	
 }
 
-.project_link:hover {
+.project_link:hover, .article_link:hover {
 	color: #ff0000;
 }
 
@@ -245,6 +257,7 @@ span {
 	margin: 10px 0px; 
 }
 
+
 @media screen and (min-width: 600px) {
 	.introduction {
 		background: #2d2d2d;
@@ -256,7 +269,7 @@ span {
 		align-items: center;
 	}
 
-	.photo {
+	.introduction_photo {
 		width: 305px;
 		height: 250px;
 		border-bottom-style: dotted;
@@ -264,7 +277,7 @@ span {
 		border-color: red;
 	}
 
-	.about {
+	.introduction_about {
 		width: 305px;
 		height: 250px;
 		margin-top: 40px;
@@ -277,48 +290,7 @@ span {
 	.section {
 		padding: 0.5em 8em;
 		background: #fefefe; 
-	}
-
-	.section_title {
-		margin-bottom: -14px;
-		padding-bottom: 0px;  
-	}
-
-	.section_title_link {
-		color: #ff0000;
-		background-color: #000000;
-		font-size: 14px;
-		border-radius: 5px;
-		margin-left: 10px;
-	}
-
-	.project {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: center;
-		padding-bottom: 15px;
-	}
-
-	.project_link {
-		color: #000000;	
-	}
-
-	.project_link i{
-		font-size: 1.5em;
-		padding-left: 0;
-		padding-right: 10px;
-	}
-
-	.project_source {
-		background-color: #bec6d5;
-		color: #000000;
-		border-radius: 4px;
-		padding: 0 5px;
-	}
-	.container {
-		color: #2d2d2d;
-		margin: 10px 0px; 
+		max-width: 100%;
 	}
 }
 
