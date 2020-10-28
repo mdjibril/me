@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  	<meta name="description" content="The online portfolio of web designer/developer Jibril Dauda Muhammad. I create beautiful, responsive, accessible websites.">
+  	<meta name="keywords" content="web developer, front end developer, back end developer, full stack developer, network security, cyber security, network engineer">
+  	<meta name="author" content="Jibril Dauda Muhammad">
+	<title>Jibril Dauda Muhammad - Developer, Network</title>
+
+	<link href="css/main.css" rel="preload" as="style" async>
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet" defer>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
+
+	<link href="css/main.css" rel="stylesheet" async>
+</head>
+<body>
+	<header class="nav-header">
+		<div class="nav-container">
+			<div class="nav-brand" id="home">
+				<a href="index.html"><strong>&lt; mdjibril /&gt;</strong></a>
+			</div>
+			<div class="nav-list">
+				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
+				<nav class="nav-list-items" id="toggleMenu">
+					<a href="index.html" class="top">
+				        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+				        <span>Home</span>
+				    </a>
+				    <a href="about.html" class="middletop">
+				        <i class="fa fa-info fa-2x" aria-hidden="true"></i>
+				        <span>About</span>
+				    </a>
+				    <a href="blog.html" class="middlebottom">
+				        <i class="fa fa-edit fa-2x" aria-hidden="true"></i>
+				        <span>Blog</span>
+				    </a>
+				    <a href="resume.html" class="bottom">
+				        <i class="fa fa-file fa-2x" aria-hidden="true"></i>
+				        <span>CV</span>
+				    </a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<!-- articles -->
+		<section class="section others">
+			<h2 class="section_title">About me</h2>
+			<hr>
+			<div class="container about">
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer_links">
+			<a href="https://github.com/mdjibril" target="_blank" rel="noreferrer">
+			    Github
+			</a>
+			<a href="https://www.linkedin.com/in/mdjibril/" target="_blank" rel="noreferrer">
+			    Linkedin
+			</a>
+			<a href="https://www.facebook.com/mdjibril2/" target="_blank" rel="noreferrer">
+			    Facebook
+			</a>
+			<a href="https://twitter.com/mdjibril_" target="_blank" rel="noreferrer">
+			    Twitter
+			</a>
+			<a href="https://dev.to/mdjibril" target="_blank" rel="noreferrer">
+			    Dev
+			</a>
+			<a href="https://netlify.com" title="Hosted by Netlify" target="_blank" rel="noreferrer">Netlify</a>
+		</div>
+	</footer>
+
+<script type="text/javascript">
+	function openNav() {
+	  	document.querySelector("#toggleMenu").style.width = "230px";
+	  	document.querySelector("#toggleMenu").style.height = "230px";
+	  	document.querySelector("#toggleMenu").style.borderTopLeftRadius = '0%';
+	  	document.querySelector("#toggleMenu").style.borderBottomLeftRadius = '100%';
+	  	document.querySelector("#toggleMenu").style.borderBottomRightRadius = '0%';
+	}
+
+	function closeNav() {
+		document.querySelector("#toggleMenu").style.width = "0";
+	}
+</script>
+</body>
+</html>
+

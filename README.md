@@ -1,4 +1,3 @@
-# me
-Portfolio Website
+# Portfolio Website
 
 ![Home](front.png)

@@ -24,7 +24,7 @@
 			<div class="nav-list">
 				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
 				<nav class="nav-list-items" id="toggleMenu">
-					<a href="#" class="top">
+					<a href="index.html" class="top">
 				        <i class="fa fa-home fa-2x" aria-hidden="true"></i>
 				        <span>Home</span>
 				    </a>
@@ -47,97 +47,13 @@
 	</header>
 
 	<main>
-		<!-- introduction -->
-		<header class="introduction">
-			<div class="introduction_photo">
-				<div class="me">
-					<img class="avatar" src="img/me.webp" alt="user profile"/>
-				</div>
-				<div class="social me">
-				    <a href="https://github.com/mdjibril" target="_blank" rel="noreferrer">
-				        <i class="fa fa-github fa-2x" aria-hidden="true"></i>
-				    </a>
-				    <a href="https://www.linkedin.com/in/mdjibril/">
-				        <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-				    </a>
-				    <a href="https://www.facebook.com/mdjibril2/">
-				        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
-				    </a>
-				    <a href="https://twitter.com/mdjibril_">
-				        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
-				    </a>
-				</div>
-				<div class="me">
-					<h1>Assalamu alaikum! <br>I'm Jibril.</h1>
-				</div>
-			</div>
-			<div class="introduction_about">
-				<svg width="300" height="245">
-				  	<rect x="0" y="0" width="300" height="245" style="fill:#2d2d2d;" />
-
-				  	<!-- line one -->
-				  	<line x1="100" y1="0" x2="100" y2="62" style="stroke:#bec6d5;stroke-width:5" />
-				  	<circle cx="100" cy="7" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	<a href="https://github.com/mdjibril"  >
-				  		<text x="35" y="80" fill="#bec6d5" font-size="35">Fullstack</text>
-				  		<text x="35" y="90" fill="#bec6d5" font-size="15" letter-spacing="9px">developer</text>
-				  	</a>
-				  	<!-- line two -->
-				   	<line x1="100" y1="92" x2="100" y2="175" style="stroke:#bec6d5;stroke-width:5" />
-				   	<circle cx="102" cy="173" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	<!-- line three -->
-				   	<line x1="100" y1="173" x2="130" y2="173" style="stroke:#bec6d5;stroke-width:5" />
-				   	<!-- line four -->
-				   	<line x1="173" y1="75" x2="200" y2="75" style="stroke:#bec6d5;stroke-width:5" />
-				   	<circle cx="200" cy="75" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	<!-- line five -->
-				  	<line x1="200" y1="73" x2="200" y2="165" style="stroke:#bec6d5;stroke-width:5" />
-				  	<a href="https://www.linkedin.com/in/mdjibril">
-				  		<text x="130" y="185" fill="#bec6d5" font-size="35">Network</text>
-				  		<text x="130" y="195" fill="#bec6d5" font-size="15" letter-spacing="10px">engineer</text>
-				  	</a>
-				  	<!-- line six -->
-				  	<line x1="200" y1="198" x2="200" y2="245" style="stroke:#bec6d5;stroke-width:5" />
-				   	<circle cx="200" cy="238" r="5" stroke="red" stroke-width="5" fill="#bec6d5" />
-				  	Sorry, your browser does not support inline SVG.  
-				</svg>
-			</div>
-		</header>
-
 		<!-- articles -->
-		<section class="section">
+		<section class="section others">
 			<h2 class="section_title">Articles <a href="https://dev.to/mdjibril" class="section_title_link">  view all</a></h2>
 			<hr>
 			<div class="container articles" id="articles">
 			</div>
 		</section>
-
-		<!-- project -->
-		<section class="section">
-			<h2 class="section_title">Projects <a href="https://github.com/mdjibril" class="section_title_link">  view all</a></h2>
-			<hr>
-			<div class="container projects">
-				<div class="project">
-					<div>
-						<a href="https://theclone-c8ae3.web.app/" class="project_link"> <i class="fa fa-amazon fa-2x" aria-hidden="true"></i>Amazon-clone</a>
-						<div>Clone of Amzon website made with react for educational purpose </div>
-					</div>
-					<div>
-						<a href="https://github.com/mdjibril/theamazonclone.git" class="project_source" target="_blank" rel="noreferrer">Source</a>
-					</div>
-				</div>
-				<div class="project">
-					<div>
-						<a href="#" class="project_link"> <i class="fa fa-photo fa-2x" aria-hidden="true"></i>Photo Album</a>
-						<div>A web application for viewing photos </div>
-					</div>
-					<div>
-						<a href="#" class="project_source">Source</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
 	</main>
 
 	<footer class="footer">
@@ -182,14 +98,14 @@
 
 	  	//For mulitple articles that you want to display
 	  	function displayMultipleArticles() {
-		    for (let i = 1; i < 4; i++) {
+		    for (let i = 1; i < 20; i++) {
 		    	
 		    	let articleDetails = document.createElement("div");
 		      	articleDetails.className = "article";
 
-		    	let articleDate = document.createElement("div");
-		    	articleDate.className = "article_date"
-				articleDate.innerHTML = data[i].readable_publish_date; //date
+		  //   	let articleDate = document.createElement("div");
+		  //   	articleDate.className = "article_date"
+				// articleDate.innerHTML = data[i].readable_publish_date; //date
 
 				let articleTitle = document.createElement("div");
 				articleTitle.className = "article_title";
@@ -202,7 +118,7 @@
 
 		      	articleLink.appendChild(articleTitle);
 		      	articleDetails.appendChild(articleLink);
-		      	articleDetails.appendChild(articleDate);
+		      	// articleDetails.appendChild(articleDate);
 
 		      	document.getElementById("articles").appendChild(articleDetails);
 		    }
