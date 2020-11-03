@@ -44,7 +44,7 @@ a:hover {
 
 .nav-header{
 	position: fixed;
-	background: #000000;
+	background-color: #000000;
 	color: #ffffff;
 	top: 0;
 	left: 0;
@@ -131,7 +131,8 @@ span {
 }
 
 .introduction {
-	background: #2d2d2d; 
+	background-color: #2d2d2d;
+	color: #bec6d5;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -166,7 +167,7 @@ span {
 .me h1 {
 	margin-top: 0;
 	font-size: 1.8rem;
-	font-weight: 600; 
+	font-weight: 600;
 	color: #bec6d5;
 	line-height: 1.2;
 }
@@ -206,7 +207,7 @@ span {
 
 .section {
 	padding: 0.5em 1.5em;
-	background: #fefefe; 
+	background-color: #fefefe; 
 	max-width: 100%;
 }
 
