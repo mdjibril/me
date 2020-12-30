@@ -51,7 +51,7 @@
 		<section class="section others">
 			<h2 class="section_title">Articles <a href="https://dev.to/mdjibril" class="section_title_link">  view all</a></h2>
 			<hr>
-			<div class="container articles" id="articles">
+			<div class="container skillflex" id="articles">
 			</div>
 		</section>
 	</main>
@@ -98,27 +98,30 @@
 
 	  	//For mulitple articles that you want to display
 	  	function displayMultipleArticles() {
-		    for (let i = 1; i < 20; i++) {
+		    for (let i = 1; i < 4; i++) {
 		    	
 		    	let articleDetails = document.createElement("div");
-		      	articleDetails.className = "article";
+		      	// articleDetails.className = "article";
+		      	articleDetails.className = "skill-card";
 
-		  //   	let articleDate = document.createElement("div");
-		  //   	articleDate.className = "article_date"
-				// articleDate.innerHTML = data[i].readable_publish_date; //date
+		    	let articleDate = document.createElement("p");
+		    	articleDate.className = "article_date"
+				articleDate.innerHTML = data[i].readable_publish_date; //date
 
-				let articleTitle = document.createElement("div");
+				let articleTitle = document.createElement("h3");
 				articleTitle.className = "article_title";
-				articleTitle.innerHTML = data[i].title; //title
 
 		      	let articleLink = document.createElement("a"); //link
 		      	articleLink.target = "_blank";
+		      	articleLink.rel = "noreferrer";
 		      	articleLink.className = "article_link";
 		      	articleLink.href = data[i].url;
+		      	articleLink.innerHTML = data[i].title; //title
 
-		      	articleLink.appendChild(articleTitle);
-		      	articleDetails.appendChild(articleLink);
-		      	// articleDetails.appendChild(articleDate);
+		      	// articleLink.appendChild(articleTitle);
+		      	articleTitle.appendChild(articleLink);
+		      	articleDetails.appendChild(articleTitle);
+		      	articleDetails.appendChild(articleDate);
 
 		      	document.getElementById("articles").appendChild(articleDetails);
 		    }

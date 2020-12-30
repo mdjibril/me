@@ -149,7 +149,7 @@ span {
 }
 
 .introduction_photo {
-	margin-top: 40px;
+	margin-top: 10px;
 	width: 305px;
 	height: 250px;
 	border-bottom-style: dotted;
@@ -183,7 +183,7 @@ span {
 /*large screen*/
 @media screen and (min-width: 600px) {
 	.introduction_about {
-		margin-top: 40px;
+		margin-top: 10px;
 	}
 }
 
@@ -206,19 +206,15 @@ span {
 
 
 .section {
-	padding: 0.5em 1.5em;
+	padding: 1.5em 1.5em;
 	background-color: #fefefe; 
 	max-width: 100%;
-}
-
-.others {
-	margin-top: 20px;
 }
 
 /*large screen*/
 @media screen and (min-width: 600px) {
 	.section {
-		padding: 0.5em 8em;
+		padding: 1.5em 2em;
 	}
 }
 
@@ -246,26 +242,27 @@ span {
 
 .article_date {
 	font-size: 12px;
-	width: 70px;
+	margin-top: 0px;
 }
 /*large screen*/
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {
 	.article_date {
 		font-size: 12px;
-		width: 100px;
 	}
-}
+}*/
 
 .article_title {
-	width: 250px;
+	text-align: center;
+	margin-bottom: 0px;
+	margin-top: 10px;
 }
 
 /*large screen*/
-@media screen and (min-width: 600px) {
+/*@media screen and (min-width: 600px) {
 	.article_title {
-		width: 350px;
+		text-align: center;
 	}
-}
+}*/
 
 .project {
 	display: flex;
@@ -299,6 +296,9 @@ span {
 .container {
 	color: #2d2d2d;
 	margin: 10px 0px; 
+	/*margin: 10px auto;*/
+	/*margin-left: auto;*/
+	/*margin-right: auto; */
 }
 
 .footer {
@@ -319,5 +319,38 @@ span {
 
 .footer_links a {
 	padding: 10px 10px;
-	margin: 8px;
+	margin: 10px ;
+}
+
+
+@media screen and (min-width: 600px) {
+	.skillflex {
+		display: flex;
+		flex-flow: row wrap;
+		align-content: space-between;
+		justify-content: space-between;
+	}
+
+	.skill-card{
+  		margin: 15px 10px;
+  		flex : 40%;
+  		max-width: 100%; 
+  	}
+}
+
+.skill-card {
+	margin: 15px 10px;
+  	/*box-shadow: 0 4px 8px 0 rgba(0.2, 0.4, 0.6, 0.8);*/
+	  box-shadow:
+	  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+	  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+	  0 12.5px 10px rgba(0, 0, 0, 0.06),
+	  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+	  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+	  0 100px 80px rgba(0, 0, 0, 0.12)
+	;
+  	padding: 10px 5px;
+  	text-align: center;
+  	background-color: #f1f1f1;
+  	border-radius: 8px;
 }
