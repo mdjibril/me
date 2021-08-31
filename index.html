@@ -141,7 +141,7 @@
 	</main>
 
 	<footer class="footer">
-		<div class="footer_links">
+		<section class="footer_links">
 			<a href="https://github.com/mdjibril" target="_blank" rel="noreferrer">
 			    Github
 			</a>
@@ -159,7 +159,7 @@
 			</a>
 			<a href="https://netlify.com" title="Hosted by Netlify" target="_blank" rel="noreferrer">Netlify</a>
 		</div>
-	</footer>
+	</section>
 
 <script type="text/javascript">
 	function openNav() {
@@ -192,7 +192,7 @@
 		    	articleDate.className = "article_date"
 				articleDate.innerHTML = data[i].readable_publish_date; //date
 
-				let articleTitle = document.createElement("h3");
+				let articleTitle = document.createElement("p");
 				articleTitle.className = "article_title";
 
 		      	let articleLink = document.createElement("a"); //link
@@ -205,7 +205,7 @@
 		      	// articleLink.appendChild(articleTitle);
 		      	articleTitle.appendChild(articleLink);
 		      	articleDetails.appendChild(articleTitle);
-		      	articleDetails.appendChild(articleDate);
+		      	// articleDetails.appendChild(articleDate);
 
 		      	document.getElementById("articles").appendChild(articleDetails);
 		    }
@@ -213,7 +213,6 @@
 	  displayMultipleArticles();
 	}
 	getArticle();
-
 </script>
 </body>
 </html>
