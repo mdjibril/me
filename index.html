@@ -14,6 +14,7 @@
   	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" defer>
 
 	<link href="css/main.css" rel="stylesheet" async>
+	<script type="text/javascript" src="js/main.js" defer></script>
 </head>
 <body>
 	<header class="nav-header">
@@ -21,8 +22,14 @@
 			<div class="nav-brand" id="home">
 				<a href="index.html"><strong>&lt; mdjibril /&gt;</strong></a>
 			</div>
-			<marquee><h3 style="color:white;">Website Under Contruction</h3></marquee>
-			<div class="nav-list">
+			
+			<div class="nav-menu">
+				<a href="#"><strong>about</strong></a>
+				<a href="#"><strong>blog</strong></a>
+				<a href="#"><strong>resume</strong></a>
+				<a href="#"><strong>contact</strong></a>
+			</div>
+			<!-- <div class="nav-list">
 				<a class="openspan" onclick="openNav()">&#9776; &nbsp;</a>
 				<nav class="nav-list-items" id="toggleMenu">
 					<a href="#" class="top">
@@ -43,7 +50,7 @@
 				    </a>
 					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				</nav>
-			</div>
+			</div> -->
 		</div>
 	</header>
 	
@@ -69,9 +76,13 @@
 				    </a>
 				</div>
 				<div class="me">
-					<h1>Assalamu alaikum! <br>I'm Jibril.</h1>
+					<h1 data-value="Assalamu alaikum!">Assalamu alaikum!</h1>
+					<h1 data-value="I'm Jibril.">I'm Jibril.</h1>
 				</div>
 			</div>
+
+			<h2 data-value="MDJIBRIL">MDJIBRIL</h2>
+
 			<div class="introduction_about">
 				<svg width="300" height="245">
 				  	<rect x="0" y="0" width="300" height="245" style="fill:#2d2d2d;" />
@@ -107,34 +118,69 @@
 
 		<!-- articles -->
 		<section class="section">
-			<h2 class="section_title">Articles <a href="https://dev.to/mdjibril" class="section_title_link">  view all</a></h2>
-			<hr>
-			<div class="container articleflex" id="articles">
+			<h2 class="section_title">Post<a href="https://dev.to/mdjibril" class="section_title_link">  view all</a></h2>
+			
+			<!-- <div class="container articleflex" id="articles">
+			</div> -->
+
+			<div class="container sampleflex" id="sample">
+				<div style="color:white" class="test">
+					<p>This is a Post Title</p>
+					<p class="date">This is Date</p> 
+				</div>
 			</div>
+			<div class="container sampleflex" id="sample">
+				<div style="color:white" class="test">
+					<p>This is a Post Title</p>
+					<p class="date">This is Date</p> 
+				</div>
+			</div>
+			<div class="container sampleflex" id="sample">
+				<div style="color:white" class="test">
+					<p>This is a Post Title</p>
+					<p class="date">This is Date</p> 
+				</div>
+			</div>
+
+
+
 		</section>
 
 		<!-- project -->
 		<section class="section">
 			<h2 class="section_title">Projects <a href="https://github.com/mdjibril" class="section_title_link">  view all</a></h2>
-			<hr>
+			
 			<div class="container projects">
-				<div class="project">
-					<div>
-						<a href="https://theclone-c8ae3.web.app/" class="project_link"> <i class="fa fa-amazon fa-2x" aria-hidden="true"></i>Amazon-clone</a>
-						<div>Clone of Amzon website made with react for educational purpose </div>
-					</div>
-					<div>
-						<a href="https://github.com/mdjibril/theamazonclone.git" class="project_source" target="_blank" rel="noreferrer">Source</a>
-					</div>
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> <a href="#">Demo</a>
 				</div>
-				<div class="project">
-					<div>
-						<a href="#" class="project_link"> <i class="fa fa-photo fa-2x" aria-hidden="true"></i>Photo Album</a>
-						<div>A web application for viewing photos </div>
-					</div>
-					<div>
-						<a href="#" class="project_source">Source</a>
-					</div>
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> <a href="#">Demo</a>
+				</div>
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> | <a href="#">Demo</a>
+				</div>
+
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> | <a href="#">Demo</a>
+				</div>
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> | <a href="#">Demo</a>
+				</div>
+				<div>
+					<h3>Project titleTitle</h3>
+					<p>Some Information</p>
+					<a href="#">Code</a> | <a href="#">Demo</a>
 				</div>
 			</div>
 		</section>
@@ -159,9 +205,8 @@
 			    Dev
 			</a>
 			<a href="https://netlify.com" title="Hosted by Netlify" target="_blank" rel="noreferrer">Netlify</a>
-		</div>
-	</section>
-
+		</section>
+	</footer>
 <script type="text/javascript">
 	function openNav() {
 	  	document.querySelector("#toggleMenu").style.width = "230px";
@@ -187,7 +232,7 @@
 		    	
 		    	let articleDetails = document.createElement("div");
 		      	// articleDetails.className = "article";
-		      	articleDetails.className = "skill-card";
+		      	// articleDetails.className = "articlesflex";
 
 		    	let articleDate = document.createElement("p");
 		    	articleDate.className = "article_date"
@@ -206,7 +251,7 @@
 		      	// articleLink.appendChild(articleTitle);
 		      	articleTitle.appendChild(articleLink);
 		      	articleDetails.appendChild(articleTitle);
-		      	// articleDetails.appendChild(articleDate);
+		      	articleDetails.appendChild(articleDate);
 
 		      	document.getElementById("articles").appendChild(articleDetails);
 		    }
@@ -215,6 +260,6 @@
 	}
 	getArticle();
 </script>
-</body>
+
 </html>
 
